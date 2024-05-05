@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MSQ
 // @namespace    http://tampermonkey.net/
-// @version      3
+// @version      4
 // @description  Script to index all the quest in FFXIV
 // @author       You
 // @match        https://ffxiv.consolegameswiki.com/wiki/Main_Scenario_Quests
@@ -76,4 +76,9 @@
       }
     }
   }
+
+  console.log(GradaniaQuestMap);
+  console.log(LimasQuestMap);
+  console.log(UlDahQuestMap);
+  console.log(questMap);
 })();
