@@ -30,27 +30,27 @@
       switch (closeToHome) {
         case 1:
           counter = 1;
-          GradaniaQuestMap["Close to Home Gradania"] = counter;
+          GradaniaQuestMap[counter] = "Close to Home Gradania";
           break;
         case 2:
           counter = 1;
-          LimasQuestMap["Close to Home Limsa Lominsa"] = counter;
+          LimasQuestMap[counter] = "Close to Home Limsa Lominsa";
           break;
         case 3:
           counter = 1;
-          UlDahQuestMap["Close to Home Ul'dah"] = counter;
+          UlDahQuestMap[counter] = "Close to Home Ul'dah";
           break;
       }
     } else {
       switch (closeToHome) {
         case 1:
-          GradaniaQuestMap[questName] = counter;
+          GradaniaQuestMap[counter] = questName;
           break;
         case 2:
-          LimasQuestMap[questName] = counter;
+          LimasQuestMap[counter] = questName;
           break;
         case 3:
-          UlDahQuestMap[questName] = counter;
+          UlDahQuestMap[counter] = questName;
           break;
       }
     }
@@ -69,9 +69,9 @@
           StarterQuestline(questName);
         } else if (questName == "It's Probably Pirates") {
           counter = 1;
-          questMap[questName] = counter;
+          questMap[counter] = questName;
         } else {
-          questMap[questName] = counter;
+          questMap[counter] = questName;
         }
       }
     }
