@@ -81,4 +81,50 @@
   console.log(LimasQuestMap);
   console.log(UlDahQuestMap);
   console.log(questMap);
+
+  var radioContainer = document.createElement("div");
+  radioContainer.id = "StarterOptions";
+  radioContainer.style.display = "flex";
+  radioContainer.style.flexDirection = "column";
+  radioContainer.style.alignItems = "flex-start";
+
+  var options = [
+    "Starter Gradania",
+    "Starter Limasa",
+    "Starter Ul'Dah",
+    "After Intro",
+  ];
+
+  options.forEach(function (option) {
+    var label = document.createElement("label");
+    label.style.display = "flex";
+    label.style.alignItems = "center";
+    label.style.marginBottom = "10px";
+
+    var radioButton = document.createElement("input");
+    radioButton.type = "radio";
+    radioButton.name = "radioGroup";
+    radioButton.value = option;
+    radioButton.style.marginRight = "20px";
+
+    label.appendChild(radioButton);
+    label.appendChild(document.createTextNode(option));
+    radioContainer.appendChild(label);
+  });
+
+  var target = document.querySelector("#siteNotice");
+  target.appendChild(radioContainer);
+
+  var style = document.createElement("style");
+  style.type = "text/css";
+  style.innerHTML = `
+        #StarterOptions {
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            margin: 20px 20px;
+
+        }
+    `;
+  document.head.appendChild(style);
 })();
