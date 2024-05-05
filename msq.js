@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MSQ
 // @namespace    http://tampermonkey.net/
-// @version      2
+// @version      3
 // @description  Script to index all the quest in FFXIV
 // @author       You
 // @match        https://ffxiv.consolegameswiki.com/wiki/Main_Scenario_Quests
