@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         MSQ
 // @namespace    http://tampermonkey.net/
-// @version      2024-05-04
+// @version      1
 // @description  Script to index all the quest in FFXIV
 // @author       You
 // @match        https://ffxiv.consolegameswiki.com/wiki/Main_Scenario_Quests
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
+// @downloadURL  https://raw.githubusercontent.com/MrPrecise/FFXIV-MSQ-Count/main/msq.js
 // ==/UserScript==
 
 (function () {
