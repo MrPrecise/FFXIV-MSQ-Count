@@ -76,6 +76,4 @@
       }
     }
   }
-
-  console.log("Debug");
 })();
